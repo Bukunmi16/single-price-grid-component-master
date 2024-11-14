@@ -1,0 +1,189 @@
+html{
+    box-sizing: border-box;
+    font-family: "Karla", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e5eff5;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 0;
+    height: 100vh;
+}
+h3, h4,h5, p{
+    margin: 0;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+#card{
+    height: 400px;
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 40rem;
+    /* max-height: 20rem; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+#top-section{
+    width: 100%;
+    height: 45%;
+    padding: 30px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#bottom-section{
+    display: flex;  
+    width: 100%;  
+    height: 55%;
+}
+
+#bottom-left-section, #bottom-right-section{
+    width: 100vw;
+    height: 100%;
+    padding: 30px;
+}
+
+
+.top-section-heading{
+    color: #1bc4c1;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.top-section-paragraph1{
+    color: #c0df34;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.top-section-paragraph2{
+    color: #b2c7d4;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#bottom-left-section{
+    background-color: #2ab2af;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+}
+#bottom-right-section{
+    background-color: #1bc4c1;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+}
+
+.pricing{
+    color: #e5eff5;
+    margin-bottom: 15px;
+}
+.dollar{
+    color: #fff;
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.permonth{
+    margin-bottom: 200px;
+    position: relative;
+    top: -5px;
+}
+.button{
+    color: white;
+    width: 100%;
+    height: 30%;
+    border: 0;
+    background-color: #c0df34;
+    /* box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35); */
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Karla", serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+.button:hover{
+    background-color: #abc72e;
+}
+
+.bottom-left-section-heading{
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#bottom-right-section p{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#bottom-right-section ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#bottom-right-section ul li{
+    margin-bottom: 2px;
+    font-weight: 400;
+    color: #e5eff5;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        margin: 20px;
+        height: initial;
+    }
+    #card{
+        height: 100%;
+        /* width: ; */
+    }
+    #bottom-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  } 
+  #bottom-right-section{
+    width: auto;
+    height: 35%;
+  }
+  #bottom-left-section{
+    width: auto;
+    height: 35%;
+    border-bottom-left-radius: 0;
+  }
+  #top-section{
+    width: 100%;
+    height: 30%;
+    padding: 30px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.button{
+    height: 40px;
+}
+}
+
+/* @media screen and (max-width: 700px) {
+    body{
+        min-width: 13rem;   
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .card{
+        max-width: 20vw;
+    }
+} */
+/* 
+min-width - greater than
+max-width - less than 
+media queries must be the last on the css file
+they must be made in the order of lesser to greater screen sizes 
+*/
